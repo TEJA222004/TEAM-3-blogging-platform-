@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>YoursBlog - Create Post</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+
+    <!-- Sidebar (Fixed Navigation) -->
+    <aside class="sidebar">
+        <h2 class="logo">.<span>Y</span>ours<span>B</span>log</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                <li><a href="blog.html"><i class="fa-solid fa-blog"></i> Blogs</a></li>
+                <li><a href="notification.html"><i class="fa-solid fa-bell"></i> Notifications</a></li>
+                <li><a href="post.html"><i class="fa-solid fa-plus"></i> Post</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content (Create Post) -->
+    <div class="container">
+        <main class="post-section">
+            <h2>Create a New Post</h2>
+            
+            <input type="text" id="post-title" placeholder="Enter your post title" required>
+
+            <textarea id="post-content" placeholder="Write your post here..." required></textarea>
+
+            <!-- Image Upload Section -->
+            <input type="file" id="image-upload" accept="image/*" onchange="previewImage(event)">
+            <img id="image-preview" src="" alt="Image Preview" style="display:none;">
+
+            <button class="post-btn">Post</button>
+        </main>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

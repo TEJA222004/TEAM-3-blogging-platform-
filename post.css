@@ -1,0 +1,172 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: rgba(255, 64, 129, 0.9);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    font-size: 18px;
+}
+
+.sidebar nav ul li:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Main Post Section */
+.container {
+    margin-left: 260px;
+    width: 70%;
+    padding: 30px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Post Section */
+.post-section {
+    text-align: center;
+}
+
+.post-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff4081;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    transition: 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #ff4081;
+    outline: none;
+    transform: scale(1.02);
+}
+
+/* Textarea */
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Image Upload Section */
+#image-upload {
+    margin: 15px 0;
+    padding: 8px;
+    font-size: 16px;
+    background: #f4f4f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#image-preview {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Post Button */
+.post-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff4081, #ff6a00);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.post-btn:hover {
+    background: linear-gradient(45deg, #e60073, #ff4500);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    
+    .container {
+        margin-left: 210px;
+        width: 80%;
+    }
+
+    .post-section h2 {
+        font-size: 24px;
+    }
+
+    .post-btn {
+        font-size: 16px;
+    }
+}
